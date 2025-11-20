@@ -1,5 +1,6 @@
 <?php
-// Charger le CSS du thème
+
+//Charger le CSS du thème
 function streetarttheme_enqueue_styles() {
     wp_enqueue_style('streetart-style', get_stylesheet_uri());
 }
@@ -18,3 +19,5 @@ function streetarttheme_setup() {
     ));
 }
 add_action('after_setup_theme', 'streetarttheme_setup');
+ 
+?>

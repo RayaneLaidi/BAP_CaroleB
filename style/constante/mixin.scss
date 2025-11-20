@@ -1,0 +1,81 @@
+/*Color*/
+$charte_color:#F2A0AE; /*rose clair*/
+$charte_color2:#E0435B;/*rose sombre*/
+$charte_color3:#0E7E92;/*bleu*/
+$secondary_color:#EBEAE7;/*blanc*/
+
+$color_logo:#2FC0D0; /*couleur logo*/
+$text_color2:#383232;
+
+
+/*Police*/
+.nova-round-regular {
+  font-family: "Nova Round", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+    background-color: $secondary_color;
+    font-family: Helvetica;
+}
+
+footer {
+  width: 100%;
+  padding-left: 1%;
+  margin-bottom: 8px;
+  background-color: $charte_color;
+  border: 1px solid $charte_color2;
+}
+body > header > h1 > a {
+color: #ffffff;
+font-weight: 400;
+}
+
+footer {
+  margin-top: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 'Margin: 0 auto' centers block content on the page */
+.wrap {
+  width: 99%;
+  margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  .article-loop {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-area,
+  .primary-sidebar {
+    width: 100%;
+  }
+}

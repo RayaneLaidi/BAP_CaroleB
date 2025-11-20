@@ -1,7 +1,7 @@
 /*
 Theme Name: CaroleB Street Art Theme
 Theme URI: http://exemple.com/streetarttheme
-Author: Ton Nom
+Author: Clara & Rayane
 Author URI: http://exemple.com
 Description: Thème minimaliste pour un site de street artiste
 Version: 1.0
@@ -18,10 +18,10 @@ body {
 }
 
 header {
-    background: #222;
-    color: #fff;
+    background: red;
+    color: #000000;
     padding: 20px;
-    text-align: center;
+    display: flex;
 }
 
 nav a {
