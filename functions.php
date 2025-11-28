@@ -1,11 +1,12 @@
 <?php
-
-//Charger le CSS du thème
+wp_enqueue_style('style.css', get_stylesheet_uri());
+/*
+/Charger le CSS du thème
 function streetarttheme_enqueue_styles() {
-    wp_enqueue_style('streetart-style', get_stylesheet_uri());
+    
 }
 add_action('wp_enqueue_scripts', 'streetarttheme_enqueue_styles');
-
+*/
 // Activer le support pour le titre automatique
 add_theme_support('title-tag');
 

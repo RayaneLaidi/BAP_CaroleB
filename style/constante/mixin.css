@@ -1,12 +1,18 @@
-/*Color*/
-$charte_color:#F2A0AE; /*rose clair*/
-$charte_color2:#E0435B;/*rose sombre*/
-$charte_color3:#0E7E92;/*bleu*/
-$secondary_color:#EBEAE7;/*blanc*/
+:root {
+  /* Color */
+  --charte_color: #F2A0AE;    /* rose clair */
+  --charte_color2: #E0435B;   /* rose sombre */
+  --charte_color3: #0E7E92;   /* bleu */
+  --secondary_color: #EBEAE7; /* blanc */
+  --color_logo: #2FC0D0;      /* couleur logo */
+  --text_color2: #383232;
+}
 
-$color_logo:#2FC0D0; /*couleur logo*/
-$text_color2:#383232;
-
+/* Exemple d'utilisation dans votre CSS */
+/* h1 {
+  color: var(--charte_color3);
+  background-color: var(--secondary_color);
+} */
 
 /*Police*/
 .nova-round-regular {
@@ -22,10 +28,10 @@ $text_color2:#383232;
 }
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+/*///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 * {
@@ -34,7 +40,7 @@ $text_color2:#383232;
 }
 
 body {
-    background-color: $secondary_color;
+    background-color: var(--secondary_color);
     font-family: Helvetica;
 }
 
@@ -42,8 +48,8 @@ footer {
   width: 100%;
   padding-left: 1%;
   margin-bottom: 8px;
-  background-color: $charte_color;
-  border: 1px solid $charte_color2;
+  background-color: var(--charte_color);
+  border: 1px solid var(--charte_color2);
 }
 body > header > h1 > a {
 color: #ffffff;
