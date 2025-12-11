@@ -13,14 +13,16 @@ html {
     font-family: Arial, sans-serif;
     margin: 0 ;
     padding: 0;
-    background: #F2A0AE;
+
     color: #000000;
 }
-
-header {
-    background: rgb(255, 255, 255);
-    color: #000000;
+.menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+
 }
 
 nav a {
@@ -38,7 +40,6 @@ h1, h2 {
     margin: 20px auto;
     padding: 20px;
     background: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .wp-block-image.alignfull{
     z-index: 2;
@@ -51,5 +52,31 @@ h1, h2 {
 }
 .wp-block-button__link {
     border-radius: 10px;
+        background:#0E7E92;
 }
 
+.titre{
+    justify-self: center;
+}
+.logo{
+    justify-self: center;
+    width: 123px;
+    height: 57px; 
+    flex: 3;
+}
+
+.burger{
+    width: 30px;
+    align-self: center;  
+
+}
+
+.phantom{
+    width: 30px; 
+}
+
+.burger hr{
+    border: 2px solid black;
+  
+  
+}

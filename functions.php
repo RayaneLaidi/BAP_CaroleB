@@ -20,5 +20,9 @@ function streetarttheme_setup() {
     ));
 }
 add_action('after_setup_theme', 'streetarttheme_setup');
+
+
+
+
  
 ?>
