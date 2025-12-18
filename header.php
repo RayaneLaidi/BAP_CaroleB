@@ -18,7 +18,7 @@
         >
     </a>
 
-    <a  href="http://caroleb.local/boutique/" class="burger"><hr><hr><hr></a>
+    <a  href="http://caroleb.local/sommaire/" class="burger"><hr><hr><hr></a>
   
   
     <!--

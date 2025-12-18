@@ -21,6 +21,20 @@ function streetarttheme_setup() {
 }
 add_action('after_setup_theme', 'streetarttheme_setup');
 
+// Ajouter la colonne ID dans l'admin des pages
+add_filter('manage_pages_columns', 'ajouter_colonne_id');
+function ajouter_colonne_id($columns) {
+    $columns['id'] = 'ID';
+    return $columns;
+}
+
+add_action('manage_pages_custom_column', 'remplir_colonne_id', 10, 2);
+function remplir_colonne_id($column, $id) {
+    if ($column === 'id') {
+        echo $id;
+    }
+}
+
 
 
 

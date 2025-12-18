@@ -77,6 +77,26 @@ h1, h2 {
 
 .burger hr{
     border: 2px solid black;
-  
-  
 }
+
+.liste-sommaire{
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 5px rgba(113, 113, 113, 0.2);;    
+    width: 80%;  
+    justify-self: end;
+
+}
+.liste-sommaire a{
+ 
+    text-decoration: none;
+    color: #000000;
+    font-size:28px;
+    margin-left: 20px ;
+}
+
+.liste-sommaire li{
+    margin-bottom:30px;
+}
+
