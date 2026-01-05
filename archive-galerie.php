@@ -6,11 +6,12 @@
     </header>
 
     <div class="categories">
-        <button><a>Oeuvres principales</a></button>
-        <button><a>Fresque</a></button>
-        <button><a>Street art</a></button>
+        <a class="button">Oeuvres principales</a>
+        <a class="button">Fresque</a>
+        <a class="button">Street art</a> 
+         <a class="button">Trier par ^ </a>
     </div>
-    <button><a>Trier par ^ </a></button>
+  
 
 
 
@@ -27,8 +28,8 @@
                                 <?php the_post_thumbnail('medium'); // Affiche l'image mise en avant ?>
                             </div>
                         <?php endif; ?>
-                        
-                        <h2><?php the_title(); ?></h2>
+                <?php the_title(); ?>
+              
                     </a>
                 </article>
 

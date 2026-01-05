@@ -14,6 +14,14 @@
   background-color: var(--secondary_color);
 } */
 
+/* Déclaration de la police */
+@font-face {
+    font-family: 'NovaCut';
+    src: url('font/novacut.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 /*Police*/
 .nova-round-regular {
   font-family: "Nova Round", system-ui;

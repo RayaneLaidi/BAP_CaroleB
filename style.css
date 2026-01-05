@@ -9,8 +9,31 @@ License: GNU General Public License v2 or later
 Text Domain: streetarttheme
 */
 
+@font-face {
+    font-family: 'NovaCut';
+    src: url('asset/style/font/NovaRound-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FjallaOne';
+    src: url('asset/style/font/FjallaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url('asset/style/font/Lobster-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
-    font-family: Arial, sans-serif;
+    font-family: 'FjallaOne';
     margin: 0 ;
     padding: 0;
     color: #000000;
@@ -34,7 +57,7 @@ a{
 
 
 h1, h2 {
-    font-family: 'Helvetica', sans-serif;
+  font-family: 'Lobster';
     justify-self: center;
 }
 
@@ -333,3 +356,4 @@ display: none;
 }
 
 }
+
