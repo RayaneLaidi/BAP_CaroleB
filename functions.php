@@ -35,7 +35,18 @@ function remplir_colonne_id($column, $id) {
     }
 }
 
+function ajouter_mes_scripts() {
+    // Chargement du script sommaire/burger
+    wp_enqueue_script(
+        'script-burger', 
+        get_stylesheet_directory_uri() . '/js/sommaire.js', 
+        array(), 
+        '1.0', 
+        true
+    );
 
+}
+add_action('wp_enqueue_scripts', 'ajouter_mes_scripts');
 
 
  

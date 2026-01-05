@@ -18,16 +18,23 @@
         >
     </a>
 
-    <a  href="http://caroleb.local/sommaire/" class="burger"><hr><hr><hr></a>
   
-  
-    <!--
-    <a href="http://caroleb.local/accueil/">Accueil</a> 
-    <a href="http://caroleb.local/boutique/">Boutique</a>
-    <a href="http://caroleb.local/bio/">Biographie</a>
-    <a href="http://caroleb.local/contact/">Contact</a>
-    <a href="http://caroleb.local/oeuvre/">Galerie D'art</a> -->
-</div>
 
-</head>
+ <a href="<?php echo esc_url( home_url( '/sommaire' ) )?>" >
+    <div id="burger"><hr><hr><hr></div>
+    </a>
+
+    <div class="sommaire"> 
+    <a href="<?php echo esc_url( home_url( '/boutique' ) )?>">Boutique</a>
+    <a href="<?php echo esc_url( home_url( '/bio' ) )?>">Biographie</a>
+    <a href="<?php echo esc_url( home_url( '/contact' ) )?>">Contact</a>
+    <a href="<?php echo esc_url( home_url( '/galerie' ) )?>">Galerie D'art</a> 
+     <a href="<?php echo esc_url( home_url( '/actu' ) )?>">Evènements</a> 
+  </div>
+
+</div>
+  
+
+
+
 
