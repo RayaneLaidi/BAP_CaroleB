@@ -1,0 +1,21 @@
+/* Conteneur principal */
+.single-product .product { display:flex; gap:30px; align-items:flex-start; }
+
+/* Galerie produit */
+.single-product .woocommerce-product-gallery { flex:1; max-width:480px; }
+
+/* Résumé (titre, prix, bouton) */
+.single-product .summary { flex:1; padding:10px; }
+
+/* Titre/Prix */
+.single-product .product_title { font-size:28px; margin-bottom:8px; }
+.single-product .price { color:#b12704; font-weight:700; margin-bottom:12px; }
+
+/* Bouton ajouter au panier */
+.single-product .single_add_to_cart_button { background:#000; color:#fff; padding:10px 16px; border-radius:4px; }
+
+/* Responsive */
+@media (max-width:768px){
+    .single-product .product { flex-direction:column; }
+    .single-product .woocommerce-product-gallery, .single-product .summary { max-width:none; }
+}

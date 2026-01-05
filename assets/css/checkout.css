@@ -1,0 +1,256 @@
+/* ===== CHECKOUT CSS CORRIGÉ - Vrais sélecteurs WooCommerce ===== */
+:root {
+  --bg: #fff;
+  --muted: #f7f7f7;
+  --border: #e6e6e6;
+  --accent: #111;
+  --accent-2: #c62828;
+  --success: #2e7d32;
+  --warning: #ff9800;
+  --radius: 10px;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+/* === PREMIER TEST - Confirmer que le CSS est chargé === */
+body.woocommerce-checkout {
+  border: 5px solid #4CAF50 !important;
+  background: red !important;
+}
+
+body.woocommerce-checkout:before {
+  content: "✅ checkout.css BIEN CHARGÉ !" !important;
+  display: block !important;
+  background: linear-gradient(90deg, #4CAF50, #2e7d32) !important;
+  color: white !important;
+  padding: 15px !important;
+  text-align: center !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  margin-bottom: 20px !important;
+}
+
+/* === STRUCTURE PRINCIPALE WOOCOMMERCE === */
+
+/* Container principal WooCommerce */
+.woocommerce-checkout .woocommerce {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Colonne gauche - Informations client */
+.woocommerce-checkout .col2-set {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Colonne droite - Récapitulatif commande */
+.woocommerce-checkout #order_review {
+  width: 380px;
+  position: sticky;
+  top: 20px;
+}
+
+/* === EN-TÊTE PERSONNALISÉ === */
+.woocommerce-checkout .woocommerce-info,
+.woocommerce-checkout .woocommerce-message {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  padding: 25px !important;
+  border-radius: var(--radius) !important;
+  border: none !important;
+  margin-bottom: 25px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.woocommerce-checkout .woocommerce-info::before,
+.woocommerce-checkout .woocommerce-message::before {
+  color: white !important;
+  opacity: 0.8;
+}
+
+/* === BARRE DE PROGRESSION === */
+/* À créer avec HTML ou via un hook PHP */
+
+/* === FORMULAIRES === */
+
+/* Titres des sections */
+.woocommerce-checkout h3 {
+  font-size: 20px !important;
+  color: var(--accent) !important;
+  margin: 0 0 25px 0 !important;
+  padding-bottom: 15px !important;
+  border-bottom: 2px solid var(--accent-2) !important;
+  position: relative;
+}
+
+.woocommerce-billing-fields h3::before {
+  content: '✏️';
+  margin-right: 10px;
+}
+
+.woocommerce-shipping-fields h3::before {
+  content: '🚚';
+  margin-right: 10px;
+}
+
+/* Champs de formulaire */
+.woocommerce-checkout .form-row {
+  margin-bottom: 20px !important;
+}
+
+.woocommerce-checkout input[type="text"],
+.woocommerce-checkout input[type="email"],
+.woocommerce-checkout input[type="tel"],
+.woocommerce-checkout input[type="password"],
+.woocommerce-checkout select,
+.woocommerce-checkout textarea {
+  width: 100% !important;
+  padding: 15px !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 8px !important;
+  font-size: 15px !important;
+  transition: var(--transition) !important;
+  background: var(--bg) !important;
+}
+
+.woocommerce-checkout input:focus,
+.woocommerce-checkout select:focus,
+.woocommerce-checkout textarea:focus {
+  outline: none !important;
+  border-color: var(--accent-2) !important;
+  box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.1) !important;
+}
+
+/* Labels */
+.woocommerce-checkout label {
+  font-weight: 700 !important;
+  color: #333 !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+  font-size: 14px !important;
+}
+
+.woocommerce-checkout label abbr[title] {
+  color: var(--accent-2) !important;
+  border: none !important;
+  font-size: 18px !important;
+  text-decoration: none !important;
+}
+
+/* === RÉCAPITULATIF DE COMMANDE === */
+
+/* Tableau récapitulatif */
+.woocommerce-checkout #order_review table.shop_table {
+  width: 100% !important;
+  border: 2px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow) !important;
+  overflow: hidden;
+  margin-bottom: 20px !important;
+}
+
+.woocommerce-checkout #order_review table.shop_table th,
+.woocommerce-checkout #order_review table.shop_table td {
+  padding: 15px !important;
+  border-bottom: 1px solid var(--border) !important;
+  text-align: left !important;
+}
+
+.woocommerce-checkout #order_review table.shop_table tr:last-child th,
+.woocommerce-checkout #order_review table.shop_table tr:last-child td {
+  border-bottom: none !important;
+}
+
+/* Ligne total */
+.woocommerce-checkout #order_review table.shop_table tfoot tr.order-total th,
+.woocommerce-checkout #order_review table.shop_table tfoot tr.order-total td {
+  background: linear-gradient(to right, rgba(198, 40, 40, 0.1), transparent) !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  color: var(--accent-2) !important;
+  border-top: 3px double var(--accent) !important;
+}
+
+/* === BOUTON DE COMMANDE === */
+.woocommerce-checkout #place_order {
+  background: linear-gradient(135deg, var(--accent) 0%, #333 100%) !important;
+  color: #fff !important;
+  padding: 18px !important;
+  border-radius: var(--radius) !important;
+  border: none !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  transition: var(--transition) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-top: 25px !important;
+}
+
+.woocommerce-checkout #place_order:hover {
+  background: linear-gradient(135deg, #222 0%, #444 100%) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 30px rgba(17, 17, 17, 0.3) !important;
+}
+
+/* === MÉTHODES DE PAIEMENT === */
+.woocommerce-checkout #payment {
+  background: var(--bg) !important;
+  border: 2px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  padding: 25px !important;
+  box-shadow: var(--shadow) !important;
+}
+
+.woocommerce-checkout #payment .payment_methods {
+  border-bottom: 2px dashed var(--border) !important;
+  padding-bottom: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.woocommerce-checkout #payment .payment_box {
+  background: var(--muted) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  padding: 15px !important;
+  margin-top: 10px !important;
+}
+
+/* === GARANTIES ET SÉCURITÉ === */
+/* À ajouter via un hook PHP dans functions.php */
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .woocommerce-checkout .woocommerce {
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+  }
+  
+  .woocommerce-checkout #order_review {
+    width: 100%;
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .woocommerce-checkout .woocommerce {
+    padding: 10px;
+    margin: 15px auto;
+  }
+  
+  .woocommerce-checkout #place_order {
+    padding: 15px !important;
+    font-size: 18px !important;
+  }
+}

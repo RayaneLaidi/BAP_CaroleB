@@ -1,0 +1,37 @@
+/*
+Theme Name: themeCaroleB
+Theme URI: http://localhost
+Author:LAIDI Rayane
+Author URI: ca arrive bien tot .
+Description: site vitrine pour une street artiste
+Version: 1.0
+*/
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles pour les produits WooCommerce */
+.woocommerce ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.woocommerce ul.products li.product {
+    width: 23%;
+    margin: 1%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
