@@ -1,4 +1,7 @@
 <?php get_header(); ?>
-<?php the_content(); ?>
+<article>
+    <?php the_content(); ?>
+</article>
+
 <div class="espace"></div>
 <?php get_footer(); ?>
