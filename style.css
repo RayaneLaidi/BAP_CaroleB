@@ -203,6 +203,9 @@ article{
 }
 
 @media screen and (min-width: 900px) {
+hr{
+    display: none;
+}
     
 .menu {
     display: flex;
