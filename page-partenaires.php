@@ -8,12 +8,13 @@
  </article>
  <hr>
 <article>
-      <img  class="patenariat a_remplacer" src="<?php echo get_template_directory_uri(); ?>/asset/partenariat.png" alt="lien">
-         <div class="control">
-         <input type="radio" name="carousel-control" id="slide-1" checked>
-         <input type="radio" name="carousel-control" id="slide-2">
-         <input type="radio" name="carousel-control" id="slide-3">
-         </div>
+     
+   <div class="carousel-container">
+   <ul class="carousel-list">
+      <li id="slide-1"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/poster.jpg" alt="lien"></li>
+      <li id="slide-2"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/pochoir.jpg" alt="lien"></li>
+      <li id="slide-3"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/viel.png" alt="lien"></li>
+   </ul></div>
 <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget risus sem.
      Sed porta lorem eget risus interdum ultricies vitae quis ex. 
@@ -23,7 +24,11 @@
      varius volutpat tellus. viverra at mi id, varius volutpat tellus. </p>
      
       <a class="button" href="<?php echo esc_url( home_url( '/actu' ) ); ?>">Exposition</a></butttype=> 
+
 </article>
+
+
+
 <div class= "espace"></div>
  <?php get_footer(); ?>
 

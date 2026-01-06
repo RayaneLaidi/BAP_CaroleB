@@ -372,3 +372,72 @@ display: none;
 
 }
 
+
+
+
+/* Conteneur principal */
+.carousel-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* La liste (le rail) */
+.carousel-list {
+    display: flex;
+    width: 100%;
+    height: 400px; /* Ajuste la hauteur selon tes besoins */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+    /* Masquer la barre de défilement */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.carousel-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Chaque slide */
+.carousel-list li {
+    flex: 0 0 50%; /* Un slide occupe 100% de la largeur */
+    scroll-snap-align: center;
+    height: 100%;
+}
+
+/* Style des images */
+.carousel-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Important : l'image remplit l'espace sans se déformer */
+    display: block;
+}
+
+/* Les trois points */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 0;
+}
+
+.carousel-dots a {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd; /* Couleur point inactif */
+    border: 1px solid #bbb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.carousel-dots a:hover {
+    background-color: #333;
+    transform: scale(1.2);
+}
