@@ -134,27 +134,47 @@ h1, h2 {
     border: 2px solid rgb(255, 255, 255);
 }
 
-.liste-sommaire{
-    list-style-type: none;
-    padding: 10px;
+/* Le conteneur qui apparaît/disparaît */
+.liste-sommaire {
+    display: none;
+    position: fixed; 
+    right: -20px;
+    background: white;
+    width: 280px;
     border-radius: 20px;
-    box-shadow: 0px 5px 5px 5px rgba(113, 113, 113, 0.2);;    
-    width: 80%;  
-    justify-self: end; 
-
-
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    z-index: 1000; 
+    padding: 20px;
+    margin-top: 500px;
 }
-.liste-sommaire a{
+
+/* On force l'affichage quand JS ajoute la classe */
+.liste-sommaire.is-open {
+    display: block;
+}
+
+/* Style de la liste générée par WP */
+.liste-sommaire ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.liste-sommaire li {
+    margin-bottom: 20px;
+}
+
+.liste-sommaire li a {
     text-decoration: none;
-    color: #000000;
-    font-size:28px;
-    margin-left: 20px ;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
 }
 
-.liste-sommaire li{
-    margin-bottom:30px;
+.liste-sommaire li a:hover {
+    color: #0073aa; /* Couleur WordPress par défaut */
 }
-
 .banderol{
     display: flex;
     z-index: 10;

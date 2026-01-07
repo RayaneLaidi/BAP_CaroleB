@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     burger.addEventListener('click', function() {
         // "toggle" ajoute la classe si elle n'est pas là, et l'enlève si elle y est
         menu.classList.toggle('is-open');
-        burger.classList.toggle('burger-active'); // Optionnel: pour animer les traits en X
     });
 });
           

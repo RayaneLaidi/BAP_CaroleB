@@ -46,8 +46,27 @@ function ajouter_mes_scripts() {
     );
 
 }
-add_action('wp_enqueue_scripts', 'ajouter_mes_scripts');
 
+// Pour les utilisateurs connectés
+add_action('admin_post_mon_formulaire_contact', 'traiter_mon_formulaire');
+// Pour les visiteurs (non connectés)
+add_action('admin_post_nopriv_mon_formulaire_contact', 'traiter_mon_formulaire');
 
- 
-?>
+function traiter_mon_formulaire() {
+    // 1. Vérifier les données (Sécurité)
+    if (isset($_POST['nom']) && isset($_POST['email'])) {
+        $nom = sanitize_text_field($_POST['nom']);
+        $email = sanitize_email($_POST['email']);
+
+        // 2. Faire quelque chose (envoyer un mail par exemple)
+        $to = get_option('admin_email');
+        $subject = 'Nouveau message de ' . $nom;
+        $body = 'L\'utilisateur ' . $nom . ' vous a contacté.';
+        
+        wp_mail($to, $subject, $body);
+    }
+
+    // 3. Rediriger l'utilisateur après l'envoi
+    wp_redirect( home_url('/merci/') );
+    exit;
+}
