@@ -426,7 +426,7 @@ display: none;
 
 /* Chaque slide */
 .carousel-list li {
-    flex: 0 0 50%; /* Un slide occupe 100% de la largeur */
+    flex: 0 0 100%; /* Un slide occupe 100% de la largeur */
     scroll-snap-align: center;
     height: 100%;
 }
