@@ -2,7 +2,7 @@
     
 <main class="wrap">
   
- <img  class="pochoir" src="<?php echo get_template_directory_uri(); ?>/asset/pochoir.jpg" alt="lien">
+ <img  class="carole" src="<?php echo get_template_directory_uri(); ?>/asset/carole.png" alt="lien">
 
       <article class="article-full">    
        <?php the_content(); ?>
@@ -31,7 +31,7 @@
     <a  class ="button" href="<?php echo esc_url( home_url( '/partenaires' ) ); ?>">Voir tout</a>
  </article>
 
- <div class="espace"></div>
+
  
 
 </body>
