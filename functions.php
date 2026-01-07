@@ -67,6 +67,11 @@ function traiter_mon_formulaire() {
     }
 
     // 3. Rediriger l'utilisateur après l'envoi
-    wp_redirect( home_url('/merci/') );
+    wp_redirect( home_url('/merci') );
     exit;
 }
+
+function mytheme_post_thumbnails() {
+    add_theme_support( 'post-thumbnails' );
+}
+add_action( 'after_setup_theme', 'mytheme_post_thumbnails' );

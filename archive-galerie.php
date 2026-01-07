@@ -25,10 +25,11 @@
                     <a href="<?php the_permalink(); ?>">
                         <?php if ( has_post_thumbnail() ) : ?>
                             <div class="image-conteneur">
-                                <?php the_post_thumbnail('medium'); // Affiche l'image mise en avant ?>
+                                <?php the_post_thumbnail('medium'); ?>
+                                <br>
+                                <?php the_title()?>
                             </div>
                         <?php endif; ?>
-                <?php the_title(); ?>
               
                     </a>
                 </article>
@@ -40,4 +41,5 @@
     </div>
 </main>
 
+ <div class="espace"></div>
 <?php get_footer(); ?>
