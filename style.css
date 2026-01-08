@@ -9,6 +9,8 @@ License: GNU General Public License v2 or later
 Text Domain: streetarttheme
 */
 
+
+/*Font*/
 @font-face {
     font-family: 'Lobster';
     src: url('asset/style/font/Lobster-Regular.ttf') format('truetype');
@@ -30,6 +32,9 @@ Text Domain: streetarttheme
     font-style: normal;
     font-display: swap;
 }
+
+
+/*Version Mobile*/
 
 .deux{
     display: none;
@@ -169,7 +174,7 @@ h1, h2 {
 }
 
 .liste-sommaire li a:hover {
-    color: #0073aa; /* Couleur WordPress par défaut */
+    color: #0073aa;
 }
 .banderol{
     display: flex;
@@ -214,7 +219,7 @@ article{
 }
 
 .espace{
-    height: 50px;
+    height: 90px;
 }
 .a_remplacer{
     opacity: 0.25;
@@ -325,7 +330,33 @@ article{
     margin: 20px;
 }
 
+.footer{
+    background-color: #E0435B;
+    display: none;
+}
+.logos{
+    width: 116px;
+    height: 100px;
+}
 
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    border-radius: 10px;   
+    background-color: #D9D9D9;
+    border: #D9D9D9 ;
+    }
+    input::placeholder {
+ 
+    opacity: 1;
+    }
+    input:placeholder-shown {
+    border: 1px solid #095484;
+ }
+
+/*Version Ordi*/
 @media screen and (min-width: 900px) {
 
 .deux{
@@ -421,23 +452,20 @@ display: none;
 }
 
 .espace{
-    height: 100px;
-}
-.a_remplacer{
-    opacity: 0.25;
-    border: 3px solid red;
-}
-.control{
-    align-self: center;
-}
+    height: 100px;/*Pour créer un espace à cause de la posisition fixed du footer*/
+} 
+
+
 .event{
-      display: flex;
+    display: flex;
     flex-direction: column;
 
 }
+
 .text-actu{
     margin: 0px;
 }
+
 .button-actu{
     margin: 0px;
     border: 2px solid #2FC0C8;
@@ -446,6 +474,9 @@ display: none;
     justify-self: center;
     width: 192px;
     padding: 7px;
+}
+.footer{
+    display: block;
 }
 
 }
