@@ -116,6 +116,9 @@ h1, h2 {
 .sommaire{
     display: none;
 }
+.sommaire a{
+    font-size: 22px;
+}
 
 #burger{
     width: 30px;
