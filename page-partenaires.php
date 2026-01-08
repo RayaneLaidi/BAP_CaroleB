@@ -11,9 +11,10 @@
      
    <div class="carousel-container">
    <ul class="carousel-list">
-      <li id="slide-1"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/poster.jpg" alt="lien"></li>
-      <li id="slide-2"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/pochoir.jpg" alt="lien"></li>
-      <li id="slide-3"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/viel.png" alt="lien"></li>
+      <li id="slide-1"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/partenaire1.jpg" alt="lien"></li>
+      <li id="slide-2"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/partenaire2.jpg" alt="lien"></li>
+      <li id="slide-3"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/partenaire3.png" alt="lien"></li>
+      <li id="slide-4"><img  class="" src="<?php echo get_template_directory_uri(); ?>/asset/partenaire4.jpg" alt="lien"></li>
    </ul></div>
 <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget risus sem.
@@ -29,6 +30,5 @@
 
 
 
-<div class= "espace"></div>
  <?php get_footer(); ?>
 
