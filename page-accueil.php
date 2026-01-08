@@ -19,8 +19,8 @@
       <div class="carousel-container">
       <ul class="carousel-list">
       <li id="slide-1"><img  class="wonder_woman  " src="<?php echo get_template_directory_uri(); ?>/asset/wonder_woman.png" alt="lien"></li>
-      <li id="slide-2"><img  class="wonder_woman  " src="<?php echo get_template_directory_uri(); ?>/asset/wonder_woman.png" alt="lien"></li>
-      <li id="slide-3"><img  class="wonder_woman  " src="<?php echo get_template_directory_uri(); ?>/asset/wonder_woman.png" alt="lien"></li>
+      <li id="slide-2"><img  class="wonder_woman  " src="<?php echo get_template_directory_uri(); ?>/asset/pochoir.jpg" alt="lien"></li>
+      <li id="slide-3"><img  class="wonder_woman  " src="<?php echo get_template_directory_uri(); ?>/asset/wonder_or.png" alt="lien"></li>
       </ul></div>
 
       <a class="button" href="<?php echo esc_url( home_url( '/galerie' ) ); ?>">Voir tout</a>
