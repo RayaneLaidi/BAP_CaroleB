@@ -25,12 +25,16 @@
     </a>
 
     <div class="sommaire"> 
-    <a href="<?php echo esc_url( home_url( '/boutique' ) )?>">Boutique</a>
-    <a href="<?php echo esc_url( home_url( '/bio' ) )?>">Biographie</a>
-    <a href="<?php echo esc_url( home_url( '/contact' ) )?>">Contact</a>
-    <a href="<?php echo esc_url( home_url( '/galerie' ) )?>">Galerie D'art</a> 
-     <a href="<?php echo esc_url( home_url( '/actu' ) )?>">Evènements</a> 
-  </div>
+    <a href="<?php echo esc_url( get_permalink( get_page_by_path('accueil') ) ); ?>">Accueil</a>
+    <a href="<?php echo esc_url( get_permalink( get_page_by_path('Partenaires') ) ); ?>">Partenaires</a>
+    <a href="<?php echo esc_url( get_permalink( get_page_by_path('actu') ) ); ?>">Evènements</a>
+    <a href="<?php echo esc_url( get_permalink( get_page_by_path('contact') ) ); ?>">Contact</a>
+    <a href="<?php echo esc_url( get_permalink( get_page_by_path('Biographie') ) ); ?>">Biographie</a>
+    <a href="<?php echo esc_url( get_post_type_archive_link('galerie') ); ?>">Galerie</a>
+    <a href="<?php echo esc_url( get_permalink( get_page_by_path('Shop') ) ); ?>">Boutique</a>
+    <a href="<?php echo esc_url( get_permalink( get_page_by_path('Cart') ) ); ?>">Panier</a>
+
+    </div>
 
 </div>
   

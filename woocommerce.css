@@ -1,0 +1,50 @@
+/* Styles spécifiques WooCommerce */
+
+/* Container produits */
+.woocommerce ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+/* Produit individuel */
+.woocommerce ul.products li.product {
+    width: 23%;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background: #fff;
+}
+
+/* Prix */
+.woocommerce .price {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Bouton ajouter au panier */
+.woocommerce .button.add_to_cart_button {
+    background: #007cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Boutons */
+.woocommerce a.button, .woocommerce button.button {
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .woocommerce ul.products li.product {
+        width: 48%;
+    }
+}
