@@ -6,9 +6,6 @@
     <label for="nom">Nom</label>
     <input type="text" name="nom" id="nom" required>
 
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" required>
-
     <label for="email">Message</label>
     <input type="text" name="email" id="email" required>
 

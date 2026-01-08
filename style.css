@@ -254,7 +254,9 @@ article{
     display: flex;
     justify-content: center;
 }
-
+.flex2{
+    display: flex;
+}
 
 
 .carousel-container {
@@ -336,9 +338,11 @@ article{
 }
 .logos{
     width: 116px;
+    height: 110px;
+}
+.logo2{
     height: 100px;
 }
-
 input {
     width: 90%;
     padding: 10px;
@@ -355,7 +359,20 @@ input {
     input:placeholder-shown {
     border: 1px solid #095484;
  }
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: -80px;
+}
+ 
+ul a {
+    color: white;
+    font-size: 20px;
+}
+ul li  {
+  margin-bottom: 15px; 
 
+}
 /*Version Ordi*/
 @media screen and (min-width: 900px) {
 
@@ -478,5 +495,6 @@ display: none;
 .footer{
     display: block;
 }
+
 
 }
