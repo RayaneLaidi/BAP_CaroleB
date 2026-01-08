@@ -1,6 +1,6 @@
 
     <div class="espace"></div>
-    
+
    <div class="banderol">
     <a href="https://www.linkedin.com/in/carole-b-artiste/?originalSubdomain=fr"><img  class="logos" src="<?php echo get_template_directory_uri(); ?>/asset/tiktok.png" alt="Lien du tiktok"></a>
     <a href="https://www.instagram.com/carolebcollage?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img   class="logos" src="<?php echo get_template_directory_uri(); ?>/asset/insta.png" alt="Lien du instagram"></a>
@@ -8,9 +8,23 @@
     </div>
     
    <div class="footer">
+   <div>
+   <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+   <img  class="logo"
+      src="<?php echo get_template_directory_uri(); ?>/asset/logo.png" 
+      alt="Logo du site">
+   </a>
+   </div>
+
    <a href="https://www.linkedin.com/in/carole-b-artiste/?originalSubdomain=fr"><img  class="logos" src="<?php echo get_template_directory_uri(); ?>/asset/tiktok_blanc4x.png" alt="Lien du tiktok"></a>
    <a href="https://www.instagram.com/carolebcollage?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img   class="logos" src="<?php echo get_template_directory_uri(); ?>/asset/insta_blanc4x.png" alt="Lien du instagram"></a>
    <a href="https://www.linkedin.com/in/carole-b-artiste/?originalSubdomain=fr"><img   class="logos" src="<?php echo get_template_directory_uri(); ?>/asset/linkedin_blanc4x.png" alt="Lien du linkedin"></a>
    
-   </div>
-
+    <a href="<?php echo esc_url( home_url( '/shop' ) )?>">Boutique</a>
+    <a href="<?php echo esc_url( home_url( '/bio' ) )?>">Biographie</a>
+    <a href="<?php echo esc_url( home_url( '/contact' ) )?>">Contact</a>
+    <a href="<?php echo esc_url( home_url( '/galerie' ) )?>">Galerie D'art</a> 
+    <a href="<?php echo esc_url( home_url( '/actu' ) )?>">Evènements</a> 
+    <a href="<?php echo esc_url( home_url( '/cart' ) )?>"><img class="panier" src="<?php echo get_template_directory_uri(); ?>/asset/panier.png" alt="lien"></a> 
+  </div>
+  

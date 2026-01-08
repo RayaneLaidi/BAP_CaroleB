@@ -9,6 +9,9 @@
     <label for="email">Email</label>
     <input type="email" name="email" id="email" required>
 
+    <label for="email">Message</label>
+    <input type="text" name="email" id="email" required>
+
     <button class="button" type="submit">Envoyer</button>
 </form>
 
