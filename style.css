@@ -250,6 +250,82 @@ article{
     justify-content: center;
 }
 
+
+
+.carousel-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-list {
+    display: flex;
+    width: 100%;
+    height: 400px; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.carousel-list::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-list li {
+    flex: 0 0 100%; 
+    scroll-snap-align: center;
+    height: 100%;
+}
+
+.carousel-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 0;
+}
+
+.carousel-dots a {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd; 
+    border: 1px solid #bbb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.carousel-dots a:hover {
+    background-color: #333;
+    transform: scale(1.2);
+}
+.grille-galeries{
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+}
+
+.image-conteneur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+
 @media screen and (min-width: 900px) {
 
 .deux{
@@ -372,78 +448,4 @@ display: none;
     padding: 7px;
 }
 
-}
-
-.carousel-container {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-list {
-    display: flex;
-    width: 100%;
-    height: 400px; 
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.carousel-list::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel-list li {
-    flex: 0 0 100%; 
-    scroll-snap-align: center;
-    height: 100%;
-}
-
-.carousel-list img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;
-}
-
-/* Les trois points */
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 15px 0;
-}
-
-.carousel-dots a {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ddd; /* Couleur point inactif */
-    border: 1px solid #bbb;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.carousel-dots a:hover {
-    background-color: #333;
-    transform: scale(1.2);
-}
-.grille-galeries{
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: center;
-}
-
-.image-conteneur{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
 }
